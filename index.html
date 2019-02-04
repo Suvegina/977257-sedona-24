@@ -8,7 +8,7 @@
   	</header class="main-header">
   		<nav class="main-navigation">
   			<a class="main-header-logo">
-  				<a href="index.html"><img src="img/logo-sedona.svg "alt="Sity of Sedona" width="140px" height="71"></a>
+  				<a href="index.html"><img src="img/logo-sedona.svg "alt="Логотип города Седона" width="140px" height="71"></a>
   			</a>
   			<ul class="site-navigation">
   				<li><a href="info.html">Информация</a></li>
@@ -39,22 +39,22 @@
             <img src="img/real-town.jpg" alt="Настоящий городок" width="800" height="256">
           </li>
         	<li>
-    	    	<img src="img/icon-1.svg" alt="Жильё" width="75" height="72">
+    	    	<img src="img/icon-1.svg" alt="Иконка жилья" width="75" height="72">
     	    	<h4>Жильё</h4>
     	    	<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
     	    </li>
     	    <li>
-    	    	<img src="img/icon-3.svg" alt="Еда" width="74" height="70">
+    	    	<img src="img/icon-3.svg" alt="Иконка еды" width="74" height="70">
     	    	<h4>Еда</h4>
     	    	<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
     	    </li>
     	    <li>
-    	    	<img src="img/icon-2.svg" alt="Сувениры" width="64" height="76">
+    	    	<img src="img/icon-2.svg" alt="Иконка сувениров" width="64" height="76">
     	    	<h4>Сувениры</h4>
    	     		<p>Не только китайского, но и местного производства!</p>
    	      </li>
     	    <li class="feature-item">
-         	  	<img src="img/bridge.jpg" alt="Мост дьявола" width="800" height="256"> 	      	
+         	  	<img src="img/bridge.jpg" alt="Фотография моста дьявола" width="800" height="256"> 	      	
     	      <h3>Там есть Мост дьявола</h3>
     	      <p>— №2 —</p>
     	      <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -80,59 +80,56 @@
   			<h2>Заинтересовались?</h2>
   			<p class="appointment-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </ul>
-        <button class="button" href="#">Поиск гостиницы в Седоне</button>
-        <!--Здесь будет располагаться форма 
-        <a class="button" href="#">Поиск гостиницы в Седоне</a>
-  			-->
-        <ul>
-          <li>
-            <p>Дата заезда:</p>
-            <p>24 апреля 2017</p>
+        <button class="appointment-button" href="#" type="button-search">Поиск гостиницы в Седоне</button>
+        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post" id="button-search">
+          <p class="appointment-item">
+            <label for="appointment-date-arrival">Дата заезда:</label>
+            <input id="appointment-date-arrival" type="text" name="date-arrival" value="" placeholder="24.04.2017">
             <img src="img/calendar.svg" width="21" height="22">
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <p>Дата выезда:</p>
-            <p>4 июля 2017</p>
+          </p>
+          <p class="appointment-item">
+            <label for="appointment-date-departure">Дата выезда:</label>
+            <input id="appointment-date-departure" type="text" name="date-departure" value="" placeholder="4.07.2017">
             <img src="img/calendar.svg" width="21" height="22">
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <p>Взрослые:</p>
-            <button class="minus" href="#">-</button> 
-            <p>2</p> 
-            <button class="minus" href="#">+</button>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <p>Дети:</p>
-            <button class="minus" href="#">-</button> 
-            <p>2</p> 
-            <button class="minus" href="#">+</button>
-          </li>
-        </ul>
-        <button class="button" href="#">Найти</button>
+          </p>
+          <p class="appointment-item">
+            <label for="appointment-adults">Взрослые:</label>
+            <button class="minus" range="-1" href="#">-</button>
+            <input id="appointment-adults" type="text" name="appointment-adults" value="2">
+            <button class="plus" href="#">+</button>
+          </p>
+          <p class="appointment-item">
+            <label for="appointment-children">Дети:</label>
+            <button class="minus" href="#">-</button>
+            <input id="appointment-children" type="text" name="children" value="1">
+            <button class="plus" href="#">+</button>
+          </p>
+          <button class="appointment-button button" type="submit">Найти</button>
+        </form>
   		</section>
-  		<section class="modal modal-map"><img src="img/map.png" width="1200" height="593"></section>
+  		<section class="modal modal-map">
+        <h2 class="visually-hidden">Как до нас добраться
+        </h2>
+        <p>
+          <img src="img/map.png" width="1200" height="593" alt="Небольшой город Седона находится на севере штата Аризона в США">
+        </p>
+      </section>
   	</main>
 
   	<footer class="main-footer">
   		<p>#visitSEDONA</p>
   		<div class="footer-social">
   			<ul>
-          <img src="img/t2.jpg" alt="twitter" width="46" height="48"><a class="social-button" href="#"></a>
-          <img src="img/fb-icon2.jpg" alt="Фейсбук" width="46" height="48"><a class="social-button" href="#"></a>
-          <img src="img/youtube2.jpg" alt="Твиттер" width="46" height="48"><a class="social-button" href="#"></a>
+          <img src="img/t2.jpg" alt="twitter" width="46" height="48"><a class="social-button" href="https://twitter.com/htmlacademy_ru"></a>
+          <img src="img/fb-icon2.jpg" alt="Фейсбук" width="46" height="48"><a class="social-button" href="https://www.facebook.com/htmlacademy"></a>
+          <img src="img/youtube2.jpg" alt="Твиттер" width="46" height="48"><a class="social-button" href="https://www.youtube.com/user/htmlacademyru"></a>
   				<!--<li><img src="img/twitter.svg" width="17" height="15" alt="Твиттер"><a class="social-button" href="#">Twitter</a></li>
   				<li><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"><a class="social-button" href="#">FaceBook</a></li>
   				<li><img src="img/youtube.svg" width="20" height="16" alt="Ютуб"><a class="social-button" href="#">YouTube</a></li>-->
   			</ul>
   		</div>
   		<p class="footer-copyright">
-  			<a href="https://htmlacademy.ru"><b>Website by</b><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy"></a>
+  			<a href="https://htmlacademy.ru/intensive/htmlcss"><b>Website by</b><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy"></a>
   		</p>
   	</footer>
   </body>
