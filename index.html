@@ -38,21 +38,6 @@
             <!--Здесь будет находиться свойство голубой плашки под текстом-->
             <img src="img/real-town.jpg" alt="Настоящий городок" width="800" height="256">
           </li>
-        	<li>
-    	    	<img src="img/icon-1.svg" alt="Иконка жилья" width="75" height="72">
-    	    	<h4>Жильё</h4>
-    	    	<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-    	    </li>
-    	    <li>
-    	    	<img src="img/icon-3.svg" alt="Иконка еды" width="74" height="70">
-    	    	<h4>Еда</h4>
-    	    	<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-    	    </li>
-    	    <li>
-    	    	<img src="img/icon-2.svg" alt="Иконка сувениров" width="64" height="76">
-    	    	<h4>Сувениры</h4>
-   	     		<p>Не только китайского, но и местного производства!</p>
-   	      </li>
     	    <li class="feature-item">
          	  	<img src="img/bridge.jpg" alt="Фотография моста дьявола" width="800" height="256">
     	      <h3>Там есть Мост дьявола</h3>
@@ -74,22 +59,41 @@
     	    	<p>— №5 —</p>
     	    	<p>Большинство едет в гранд каньон и толпится там</p>
     	    </li>
+          <li>
+            <ul class="more-advanture">
+              <li> <!--Из лекции: создаем логическую цепочку расположения блоков, далее с помощью Flex Box вытянем блок на другое место, для улучшения структуры документа с помощью "order"-->
+                <img src="img/icon-1.svg" alt="Иконка жилья" width="75" height="72">
+                <h4>Жильё</h4>
+                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!  </p>
+              </li>
+              <li>
+                <img src="img/icon-3.svg" alt="Иконка еды" width="74" height="70">
+                <h4>Еда</h4>
+                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li>
+                <img src="img/icon-2.svg" alt="Иконка сувениров" width="64" height="76">
+                <h4>Сувениры</h4>
+                <p>Не только китайского, но и местного производства</p>
+              </li>
+            </ul> 
+          </li>
     	  </ul>
   		</section>
   		<section class="appointment"> <!--Блок заинтересовались? ... -->
   			<h2>Заинтересовались?</h2>
   			<p class="appointment-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </ul>
-        <button class="appointment-button" href="#" type="button-search">Поиск гостиницы в Седоне</button>
-        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post" id="button-search">
+        <button class="appointment-button" type="button">Поиск гостиницы в Седоне</button>
+        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="appointment-item">
             <label for="appointment-date-arrival">Дата заезда:</label>
-            <input id="appointment-date-arrival" type="text" name="date-arrival" value="" placeholder="24.04.2017">
+            <input id="appointment-date-arrival" type="text" name="date-arrival" value="24 апреля 2017">
             <img src="img/calendar.svg" width="21" height="22">
           </p>
           <p class="appointment-item">
             <label for="appointment-date-departure">Дата выезда:</label>
-            <input id="appointment-date-departure" type="text" name="date-departure" value="" placeholder="4.07.2017">
+            <input id="appointment-date-departure" type="text" name="date-departure" value="4 июля 2017">
             <img src="img/calendar.svg" width="21" height="22">
           </p>
           <p class="appointment-item">
@@ -128,9 +132,9 @@
   				<li><img src="img/youtube.svg" width="20" height="16" alt="Ютуб"><a class="social-button" href="#">YouTube</a></li>-->
   			</ul>
   		</div>
-  		<p class="footer-copyright">
+  		<section class="footer-copyright">
   			<a href="https://htmlacademy.ru/intensive/htmlcss"><b>Website by</b><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy"></a>
-  		</p>
+  		</section>
   	</footer>
   </body>
 </html>
