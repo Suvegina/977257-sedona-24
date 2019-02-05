@@ -20,7 +20,6 @@
       <!--<img src="intro-welcome.svg" width="459" height="353" alt="Welcome to the gorgeous. Sedona. Because the Grand Canyon sucks!">
       <img src="img/logo-sedona.svg" width="459" height="353" alt="Sedona">
       <img src="img/logo-sedona.svg" width="459" height="353alt="Because the Grand Canyon sucks!">-->
-      <img src="img/catalog-bg.jpg" width="1200" height="510" alt="Фон">
     </header> 
     
     <main class="container">
@@ -62,16 +61,21 @@
                 <label for="filter-apartments">Апартаменты</label>
               </li>
             </ul>
-            <input type="range" name="filter-price" min="от 0" max="до 3000" step="1" value="50"> <br>
+            <input type="range" name="filter-price" min="0" max="3000" step="1" value="50"> <br>
             <button type="submit" class="filter-button button">Показать</button>
           </fieldset>        
         </form>
-      </section><!-- Здесь будет располагаться фон с фильтром + фильтр по сортировке товаров ниже... -->
+        <img src="img/catalog-bg.jpg" width="1200" height="510" alt="Фон">
+      </section><!-- Блок с сортировкой товаров начало --- -->
       <section class="sort-item">
-        <a class="sort-item" type="sort-price">По цене</a>
-        <a class="sort-item" type="sort-type">По типу</a>
-        <a class="sort-item" type="sort-rating">По рейтингу</a> 
-      </section>
+        <p>Найдено: 3</p>
+        <a href="" type="sort-price">По цене</a>
+        <a href="" type="sort-type">По типу</a>
+        <a href="" type="sort-rating">По рейтингу</a> 
+        <a class="sort-up-down" href="#"><img src="img/icon-down-dir.svg" alt="Сортировка вниз"></a>
+        <a class="sort-up-down" href="#"><img src="img/icon-up-dir.svg" alt="Сортировка вверх"></a>
+          <!-- <label for="up">Сортировка вверх</label>-->
+      </section><!-- конец блока с сортировкой товаров --- -->
       <section class="catalog">
       	<h2 class="visually-hidden">Список гостиниц в Седоне</h2>
       	<ul class="catalog-list">
@@ -82,8 +86,8 @@
             </a>
             <p>Гостиница</p>
       	    <p class="catalog-item-price">От 4000 Р.</p>
-      	    <button type="submit" class="button">Подробнее</button>
-      	    <button type="submit" class="button">Забронировать</button>
+      	    <a href="" class="button-more"> Подробнее</a>
+      	    <a href="" class="button-booking"> Забронировать</a>
       	    <div class="star">
        		    <img src="img/star.svg" alt="Звезда 1" width="18" height="17">
               <img src="img/star.svg" alt="Звезда 2" width="18" height="17">
@@ -99,8 +103,11 @@
             </a>
             <p>Мотель</p>
             <p class="catalog-item-price">От 3000 Р.</p>
-            <button type="submit" class="button">Подробнее</button>
-            <button type="submit" class="button">Забронировать</button>
+            <a href="" class="button-more"> Подробнее</a>
+            <a href="" class="button-booking"> Забронировать</a>
+            <!-- До этого были такие кнопки ->  
+            <button class="button">Подробнее</button>
+            <button class="button">Забронировать</button> -->
             <div class="star">
               <img src="img/star.svg" alt="Звезда 1" width="18" height="17">
               <img src="img/star.svg" alt="Звезда 2" width="18" height="17">
@@ -115,8 +122,8 @@
             </a>
             <p>Апартаменты</p>
             <p class="catalog-item-price">От 2000 Р.</p>
-            <button type="submit" class="button">Подробнее</button>
-            <button type="submit" class="button">Забронировать</button>
+            <a href="" class="button-more"> Подробнее</a>
+            <a href="" class="button-booking"> Забронировать</a>
             <div class="star">
               <img src="img/star.svg" alt="Звезда 1" width="18" height="17">
               <img src="img/star.svg" alt="Звезда 2" width="18" height="17">
@@ -131,9 +138,15 @@
       <p>#visitSEDONA</p>
       <div class="footer-social">
         <ul>
-          <img src="img/t2.jpg" alt="twitter" width="46" height="48"><a class="social-button" href="https://twitter.com/htmlacademy_ru"></a>
-          <img src="img/fb-icon2.jpg" alt="Фейсбук" width="46" height="48"><a class="social-button" href="https://www.facebook.com/htmlacademy"></a>
-          <img src="img/youtube2.jpg" alt="Твиттер" width="46" height="48"><a class="social-button" href="https://www.youtube.com/user/htmlacademyru"></a>
+          <li>
+            <img src="img/t2.jpg" alt="twitter" width="46" height="48"><a class="social-button" href="https://twitter.com/htmlacademy_ru"></a>
+          </li>
+          <li>
+            <img src="img/fb-icon2.jpg" alt="Фейсбук" width="46" height="48"><a class="social-button" href="https://www.facebook.com/htmlacademy"></a>
+          </li>
+          <li>
+            <img src="img/youtube2.jpg" alt="Ютуб" width="46" height="48"><a class="social-button" href="https://www.youtube.com/user/htmlacademyru"></a>
+          </li>
         </ul>
       </div>
       <section class="footer-copyright">
