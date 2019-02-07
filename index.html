@@ -87,26 +87,26 @@
         <button class="appointment-button" type="button-search">Поиск гостиницы в Седоне</button>
         <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="appointment-item">
-            <label for="appointment-date-arrival">Дата заезда:</label>
-            <input id="appointment-date-arrival" type="text" name="date-arrival" value="24 апреля 2017">
-            <img src="img/calendar.svg" width="21" height="22">
+            <label for="date-arrival">Дата заезда:</label>
+            <input id="date-arrival" type="text" name="date-arrival" value="24 апреля 2017">
+            <a href=""><img src="img/calendar.svg" width="21" height="22" alt="Показать календарь"></a>
           </p>
           <p class="appointment-item">
-            <label for="appointment-date-departure">Дата выезда:</label>
-            <input id="appointment-date-departure" type="text" name="date-departure" value="4 июля 2017">
-            <img src="img/calendar.svg" width="21" height="22">
+            <label for="date-departure">Дата выезда:</label>
+            <input id="date-departure" type="text" name="date-departure" value="4 июля 2017"> <!--placeholder="4 июля 2017">-->
+            <a href=""><img src="img/calendar.svg" width="21" height="22" alt="Показать календарь"></a>
           </p>
           <p class="appointment-item">
             <label for="appointment-adults">Взрослые:</label>
-            <button class="minus" range="-1" href="#">-</button>
-            <input id="appointment-adults" type="text" name="appointment-adults" value="2">
-            <button class="plus" href="#">+</button>
+            <button class="number" name="minus" aria-label="Уменьшить количество взрослых">-</button>
+            <input id="appointment-adults" type="text" name="adults" value="2">
+            <button class="number" name="plus" aria-label="Увеличить количество взрослых">+</button>
           </p>
           <p class="appointment-item">
             <label for="appointment-children">Дети:</label>
-            <button class="minus" href="#">-</button>
+            <button class="number" name="minus" aria-label="Уменьшить количество детей">-</button>
             <input id="appointment-children" type="text" name="children" value="1">
-            <button class="plus" href="#">+</button>
+            <button class="number" name="plus" aria-label="увеличить количесво детей">+</button>
           </p>
           <button class="appointment-button button" type="submit">Найти</button>
         </form>
@@ -133,9 +133,16 @@
           <li>
             <img src="img/youtube2.jpg" alt="Ютуб" width="46" height="48"><a class="social-button" href="https://www.youtube.com/user/htmlacademyru"></a>
           </li>
-  				<!--<li><img src="img/twitter.svg" width="17" height="15" alt="Твиттер"><a class="social-button" href="#">Twitter</a></li>
-  				<li><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"><a class="social-button" href="#">FaceBook</a></li>
-  				<li><img src="img/youtube.svg" width="20" height="16" alt="Ютуб"><a class="social-button" href="#">YouTube</a></li>-->
+  				<!--
+          <li>
+            <img src="img/twitter.svg" width="17" height="15" alt="Твиттер"><a class="social-button" href="#">Twitter</a>
+          </li>
+  				<li>
+            <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"><a class="social-button" href="#">FaceBook</a>
+          </li>
+  				<li>
+            <img src="img/youtube.svg" width="20" height="16" alt="Ютуб"><a class="social-button" href="#">YouTube</a>
+          </li>-->
   			</ul>
   		</div>
   		<section class="footer-copyright">
