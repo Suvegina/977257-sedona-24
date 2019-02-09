@@ -1,0 +1,189 @@
+/*Style.css*/
+body {
+	margin: 0;
+
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 700px;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #ffffff;
+	background-image: url("img/catalog-bg.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	text-align: center;
+}
+
+/*Стили кнопок*/
+.button {
+	font: inherit;
+	font-weight: bold;
+
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+
+	width: 458px;
+	height: 58px;
+	background-color: #81b3d2;
+	border: none;
+}
+
+.appointment-button {
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 26px;
+	color: #ffffff;
+	text-transform: uppercase;
+
+	width: 568px;
+	height: 86px;
+
+	background-color: #766357;
+	border: none;
+}
+
+.main-bg {
+	text-align: center;
+}
+
+/*Стили навигации*/
+.main-navigation {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 26px;
+	color: #000000;
+	text-align: center;
+
+	background-color: #ffffff;
+	text-decoration: none;
+}
+
+.site-navigation {
+	color: #000000;
+	list-style: none;
+}
+
+.site-navigation a {
+	color: #000000;
+}
+
+.site-navigation-current a:visited {
+	color: #766357;
+}
+
+.site-navigation a:hover {
+	color: #81b3d2;
+	list-style: none;
+}
+
+.site-navigation-current a:active {
+	color: #cacaca;
+}
+
+/*Стили преимуществ*/
+
+.features h2{
+	text-align: center; 
+	/*width: 440px;*/
+}
+
+.features {
+	text-align: center;
+}
+
+.features-list {
+	list-style: none;
+	padding: 0;
+}
+
+.feature-item-select {
+	text-align: center;
+	color: #ffffff;
+
+	background-color: #81b3d2;
+}
+
+.feature-item-select h3 {
+	font-size: 21px;
+	line-height: 21px;
+	color: #ffffff;
+}
+
+.feature-item {
+	text-align: center;
+
+	background-color: #eeeeee;
+}
+
+.feature-item h3{
+	font-size: 21px;
+	line-height: 21px;
+}
+
+.more-advanture {
+	text-align: center;
+	list-style: none;
+}
+
+/*Стили форм*/
+.appointment {
+	text-align: center;
+}
+
+
+/*Стили */
+.modal-map h2, p {
+	text-align: center;
+
+}
+
+/*Стили футера*/
+.main-footer: {
+	list-style: none;
+
+	width: 1200px;
+  	height: 120px;
+
+	background-color: #ffffff;
+	opacity: 0.9; 
+}
+.main-footer p {
+	text-align: left;
+}
+
+/*Социальные сети*/
+.footer-social: {
+	list-style: none; 
+	width: 46px;
+  	height: 48px; 
+
+	color: #ffffff;
+	background-color: #81b3d2;
+}
+
+
+
+
+
+.footer-copyright: img {
+	color: #000000;
+}
+.footer-copyright: img hover {
+	color: #81b3d2;
+}
+.footer-copyright: img focus {
+	color: #bdbbbc;
+}
+
+  /*  border-bottom: 1px dotted;*/
