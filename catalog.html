@@ -7,7 +7,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="catalog-page">
     </header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
@@ -31,7 +31,7 @@
             <legend>Инфраструктура:</legend>
             <ul>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked> 
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
                 <label for="filter-pool">Бассейн</label>
               </li>
               <li class="filter-option">
@@ -65,10 +65,11 @@
             <button type="submit" class="filter-button button">Показать</button>
           </fieldset>        
         </form>
-        <img src="img/catalog-bg.jpg" width="1200" height="510" alt="Фон">
+        <!--<img src="img/catalog-bg.jpg" width="1200" height="510" alt="Фон">-->
       </section><!-- Блок с сортировкой товаров - начало --- -->
       <section class="sort-item">
-        <p>Найдено: 3</p>
+        <h3>Найдено: 3</h3>
+        <p>Сортировка:</p>
         <a href="" type="sort-price">По цене</a>
         <a href="" type="sort-type">По типу</a>
         <a href="" type="sort-rating">По рейтингу</a> 
@@ -85,8 +86,8 @@
             </a>
             <p>Гостиница</p>
       	    <p class="catalog-item-price">От 4000 Р.</p>
-      	    <a href="" class="button-more"> Подробнее</a>
-      	    <a href="" class="button-booking"> Забронировать</a>
+      	    <a href="" class="button"> Подробнее</a>
+      	    <a href="" class="button-booking appointment-button"> Забронировать</a>
       	    <div class="star">
        		    <img src="img/star.svg" alt="Звезда 1" width="18" height="17">
               <img src="img/star.svg" alt="Звезда 2" width="18" height="17">
@@ -102,7 +103,7 @@
             </a>
             <p>Мотель</p>
             <p class="catalog-item-price">От 3000 Р.</p>
-            <a href="" class="button-more"> Подробнее</a>
+            <a href="" class="button"> Подробнее</a>
             <a href="" class="button-booking"> Забронировать</a>
             <div class="star">
               <img src="img/star.svg" alt="Звезда 1" width="18" height="17">
@@ -118,7 +119,7 @@
             </a>
             <p>Апартаменты</p>
             <p class="catalog-item-price">От 2000 Р.</p>
-            <a href="" class="button-more"> Подробнее</a>
+            <a href="" class="button"> Подробнее</a>
             <a href="" class="button-booking"> Забронировать</a>
             <div class="star">
               <img src="img/star.svg" alt="Звезда 1" width="18" height="17">
@@ -131,6 +132,19 @@
     </main>
 
     <footer class="main-footer">
+      <p class="visitSEDONA">#visitSEDONA</p>
+      <div class="footer-social" area-label="Ссылки на социальные сети">
+        <ul>
+          <li><a class="social-button" href="#">twitter</a></li>
+          <li><a class="social-button" href="#">facebook</a></li>
+          <li><a class="social-button" href="#">youtube</a></li>
+        </ul>
+        <p class="footer-copyright">
+        <p>Website by</p> 
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy"></a>
+      </p>
+    </footer>
+    <!--<footer class="main-footer">
       <p>#visitSEDONA</p>
       <div class="footer-social">
         <ul>
@@ -148,6 +162,6 @@
       <section class="footer-copyright">
         <a href="https://htmlacademy.ru/intensive/htmlcss"><b>Website by</b><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy"></a>
       </section>
-    </footer>
+    </footer>-->
   </body>
 </html>

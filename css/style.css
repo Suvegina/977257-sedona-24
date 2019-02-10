@@ -13,6 +13,7 @@ body {
 	background-image: url("img/catalog-bg.jpg");
 	background-position: top center;
 	background-repeat: no-repeat;
+
 }
 
 a {
@@ -22,6 +23,70 @@ a {
 h1 {
 	text-align: center;
 }
+
+.filter {
+	color: #000000;
+	background-color: #698cb2;
+	background-image: url("img/catalog-bg.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+.filter fieldset {
+	border: none;
+	color: #ffffff;
+}
+.filter ul {
+	list-style: none;
+	line-height: 46px;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #ffffff;
+}
+
+.filter-input:disabled + label {
+  color: #6a6a6a;
+}
+
+.filter-input:checked + disabled + label {
+  color: #6a6a6a;
+}
+
+/* Кнопка фильтра на странице каталога */
+.filter-button[type="submit"] {
+	font-weight: normal;
+
+	color: #ffffff;
+  border: 2px solid white;
+  border-radius: 2px;
+  width: 141px;
+	height: 40px;
+
+	text-align: center;
+	vertical-align: middle;
+
+	background: transparent;
+	text-transform: uppercase;
+}
+
+.filter-button[type="submit"]:hover,
+.filter-button[type="submit"]:active {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+legend {
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: bold;
+
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+}
+
 
 /*Стили кнопок*/
 .button {
@@ -38,23 +103,88 @@ h1 {
 	background-color: #81b3d2;
 	border: none;
 }
+.button:hover {
+	background-color: #669ec0;
+}
+.button:active {
+	background-color: #5496bd;
+	color: rgba(255,255,255,0.3);
+}
 
 .appointment-button {
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 26px;
+
 	color: #ffffff;
 	text-transform: uppercase;
 
 	width: 568px;
 	height: 86px;
+	margin-top: 55px;
+	margin-bottom: 55px;
 
 	background-color: #766357;
 	border: none;
 }
+/*Кнопка поиск гостиницы в седоне*/
+.appointment-button:hover {
+	background-color: #604e43;
+}
+.appointment-button:active {
+	background-color: #503e33;
+	color: rgba(255,255,255,0.3);
+}
+.number.appointment-form button {
+	background-color: #cacaca;
+}
 
+.button-booking {
+	font: inherit;
+	font-weight: bold;
+
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+
+	width: 458px;
+	height: 58px;
+	background-color: #81b3d2;
+	border: none;
+}
+/*Стили текстовых полей*/
+input[type="text"] {
+	background-color: #f2f2f2;
+	width: 346px;
+	height: 38px;
+	padding-left: 13px; 
+	border: none;	
+}
+input[type="text"]:hover {
+	background-color: #ebebeb;
+}
+input[type="text"]:focus {
+	background-color: #ffffff;
+	border: 2px solid #e5e5e5;
+}
+
+.button-booking {
+	color: #ffffff;
+	text-transform: uppercase;
+	background-color: #766357;
+	border: none;
+}
+
+/*Модальное окно*/
+.pop-up {
+	background-color: white;
+	box-shadow: 
+}
+/*Фоновое изображение на странице каталога*/
 .main-bg {
 	text-align: center;
+	border: none;
 }
 
 /*Стили навигации*/
@@ -91,6 +221,10 @@ h1 {
 	color: #cacaca;
 }
 
+.sort-item a:hover {
+	color: 
+}
+
 /*Стили преимуществ*/
 
 .features h2{
@@ -122,6 +256,8 @@ h1 {
 
 .feature-item {
 	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 65px;
 
 	background-color: #eeeeee;
 }
@@ -134,9 +270,17 @@ h1 {
 .more-advanture {
 	text-align: center;
 	list-style: none;
+	padding-top: 60px;
+	padding-bottom: 90px;
 }
 
 /*Стили форм*/
+.appointment h2 {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: bold;
+}
+
 .appointment {
 	text-align: center;
 }
@@ -150,7 +294,6 @@ h1 {
 
 /*Стили футера*/
 .main-footer: {
-	list-style: none;
 
 	width: 1200px;
   	height: 120px;
@@ -158,32 +301,66 @@ h1 {
 	background-color: #ffffff;
 	opacity: 0.9; 
 }
-.main-footer p {
+
+.visitSEDONA {
 	text-align: left;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
 }
 
-/*Социальные сети*/
-.footer-social: {
-	list-style: none; 
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: #000000;
+}
+.social-button:hover {
+  color: #81b3d2;
+}
+.social-button:active {
+  color: #bdbbbc;
+}
+/* Стили не применяются 
+.footer-copyright {
+  text-align: right;
+}
+.footer-copyright a:hover {
+	color: #81b3d2;
+}
+.footer-copyright a:active {
+	color: #bdbbbc;
+}*/
+
+
+/*Социальные сети
+
+.footer-social li {
+	list-style: none;
+	display:table;
+	display:inline-block;
 	width: 46px;
   	height: 48px; 
 
 	color: #ffffff;
 	background-color: #81b3d2;
-}
+}*/
 
+/*Социальные сети
+.social-button. a: {
+	list-style: none; 
+	width: 46px;
+  	height: 48px; 
+  	display:table;
+	color: #ffffff;
+	background-color: #81b3d2;
 
-
-
-
-.footer-copyright: img {
-	color: #000000;
-}
-.footer-copyright: img hover {
-	color: #81b3d2;
-}
-.footer-copyright: img focus {
-	color: #bdbbbc;
-}
-
-  /*  border-bottom: 1px dotted;*/
+a svg:hover #facebook,
+a svg:hover #instagram { 
+  fill: #111;
+}*/	
