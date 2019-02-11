@@ -221,10 +221,66 @@ input[type="text"]:focus {
 	color: #cacaca;
 }
 
+.sort-item a {
+	text-align: center;
+	color: #000000;
+}
+.sort-item a:visited {
+	color: #81b3d2;
+	border-bottom: none;
+}
 .sort-item a:hover {
-	color: 
+	color: #81b3d2;
+	border-bottom: 1px dashed #81b3d2;
+}
+.sort-item a:active {
+	color: #000000;
+	border-bottom: none; 
+}
+.sort-item a,
+.sort-item a:hover {
+	border-bottom: 1px dashed #81b3d2;
+}
+.sort-up-down {
+	text-align: right;
 }
 
+.sort-item h3 {
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 26px;
+	color: #000000;
+}
+.sort-item p {
+	text-align: left;
+}
+.catalog-item,
+.sort {
+  border-bottom: 1px solid #e5e5e5;
+}
+.catalog-list li {
+	list-style: none;
+}
+
+.catalog-item h3 {
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 26px;
+	color: #000000;
+}
+.catalog-item h3:hover {
+	color: #81b3d2;
+}
+.catalog-item h3:active {
+	color: rgba(0,0,0,0.3);
+}
+.catalog-list p,a{
+	text-align: left;
+}
+
+.rating p {
+	background-color: #f2f2f2;
+}
 /*Стили преимуществ*/
 
 .features h2{

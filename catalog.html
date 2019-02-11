@@ -23,7 +23,7 @@
     </header> 
     
     <main class="container">
-    	<h1 class="visually-hidden">Гостиницы</h1>
+    	<h1 class="visually-hidden">Страница гостиницы</h1>
       <section class="filters"></section>
         <h2 class="visually-hidden" >Инфраструктура:</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -67,14 +67,16 @@
         </form>
         <!--<img src="img/catalog-bg.jpg" width="1200" height="510" alt="Фон">-->
       </section><!-- Блок с сортировкой товаров - начало --- -->
-      <section class="sort-item">
+      <section class="sort">
         <h3>Найдено: 3</h3>
-        <p>Сортировка:</p>
-        <a href="" type="sort-price">По цене</a>
-        <a href="" type="sort-type">По типу</a>
-        <a href="" type="sort-rating">По рейтингу</a> 
-        <a class="sort-up-down" href="#"><img src="img/icon-down-dir.svg" alt="Сортировка вниз"></a>
-        <a class="sort-up-down" href="#"><img src="img/icon-up-dir.svg" alt="Сортировка вверх"></a>
+        <span class="sort-item">
+          <p>Сортировка:</p>
+          <a href="" type="sort-price">По цене</a>
+          <a href="" type="sort-type">По типу</a>
+          <a href="" type="sort-rating">По рейтингу</a> 
+          <a class="sort-up-down" href="#"><img src="img/icon-down-dir.svg" alt="Сортировка вниз"></a>
+          <a class="sort-up-down" href="#"><img src="img/icon-up-dir.svg" alt="Сортировка вверх"></a>
+        </span>
       </section><!-- Блок с сортировкой товаров - конец --- -->
       <section class="catalog">
       	<h2 class="visually-hidden">Список гостиниц в Седоне</h2>
@@ -86,8 +88,6 @@
             </a>
             <p>Гостиница</p>
       	    <p class="catalog-item-price">От 4000 Р.</p>
-      	    <a href="" class="button"> Подробнее</a>
-      	    <a href="" class="button-booking appointment-button"> Забронировать</a>
       	    <div class="star">
        		    <img src="img/star.svg" alt="Звезда 1" width="18" height="17">
               <img src="img/star.svg" alt="Звезда 2" width="18" height="17">
@@ -95,6 +95,8 @@
               <img src="img/star.svg" alt="Звезда 4" width="18" height="17">
        		  </div>
       		  <p class="rating">Рейтинг:8,5</p>
+            <a href="" class="button"> Подробнее</a>
+            <a href="" class="button-booking appointment-button"> Забронировать</a>
       	  </li>
           <li class="catalog-item">
             <a href="catalog-item.html">
@@ -103,14 +105,14 @@
             </a>
             <p>Мотель</p>
             <p class="catalog-item-price">От 3000 Р.</p>
-            <a href="" class="button"> Подробнее</a>
-            <a href="" class="button-booking"> Забронировать</a>
             <div class="star">
               <img src="img/star.svg" alt="Звезда 1" width="18" height="17">
               <img src="img/star.svg" alt="Звезда 2" width="18" height="17">
               <img src="img/star.svg" alt="Звезда 3" width="18" height="17">
             </div>
             <p class="rating">Рейтинг:8,9</p>
+            <a href="" class="button"> Подробнее</a>
+            <a href="" class="button-booking"> Забронировать</a>
           </li>
           <li class="catalog-item">
             <a href="catalog-item.html">
@@ -119,13 +121,13 @@
             </a>
             <p>Апартаменты</p>
             <p class="catalog-item-price">От 2000 Р.</p>
-            <a href="" class="button"> Подробнее</a>
-            <a href="" class="button-booking"> Забронировать</a>
             <div class="star">
               <img src="img/star.svg" alt="Звезда 1" width="18" height="17">
               <img src="img/star.svg" alt="Звезда 2" width="18" height="17">
             </div>
             <p class="rating">Рейтинг:9,2</p>
+            <a href="" class="button"> Подробнее</a>
+            <a href="" class="button-booking"> Забронировать</a>
           </li>
         </ul>
       </section>
