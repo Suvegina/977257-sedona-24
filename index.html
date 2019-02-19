@@ -13,11 +13,9 @@
     <header class="main-header">
       
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <a href="index.html"><img src="img/logo-sedona.svg "alt="Логотип города Седона" width="140px" height="71"></a>
-          </a>
-          <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
+        <a class="main-header-logo" href="#"><img src="img/logo-sedona.svg "alt="Логотип города Седона" width="140px" height="71"></a>
+        <ul class="site-navigation">
+          <li class=""><a href="info.html">Информация</a></li>
           <li><a href="gallery.html">Фото и видео</a></li>
           <li><a href="map.html">Карта штата</a></li>
           <li><a href="catalog.html">Гостиницы</a></li>
@@ -26,9 +24,8 @@
       <div class="main-cover">
           <!-- <img src="img/intro-welcome.svg" width="460" height="354" alt="Welcome to the gorgeous. Sedona. Because the Grand Canyon sucks!"> -->
           <!-- <img src="img/intro-mask.svg" width="1200" height="60" alt=""> -->
-          <!-- <img src="img/index-bg2.jpg"width="1200" height="510" alt=""> -->
-          <img src="img/sedona-index-intro.jpg" width="1200" height="510" alt="Фоновое изображение: Добро пожаловать в Седону!">
-        </p>
+          <img src="img/index-bg2.jpg"width="1200" height="510" alt="">
+          <!-- <img src="img/sedona-index-intro.jpg" width="1200" height="510" alt="Фоновое изображение: Добро пожаловать в Седону!"> -->
       </div>
       <!--<img src="index-bg2.jpg" width="768" height="362" alt="Welcome to the gorgeous. Sedona. Because the Grand Canyon sucks!">
       <img src="img/logo-sedona.svg" width="459" height="353" alt="Because the Grand Canyon sucks!">
@@ -52,17 +49,17 @@
           </li>
           <li>
             <ul class="more-advanture">
-              <li> <!--Из лекции: создаем логическую цепочку расположения блоков, далее с помощью Flex Box вытянем блок на другое место, для улучшения структуры документа с помощью "order"-->
+              <li class="item-wrapper"> <!--Из лекции: создаем логическую цепочку расположения блоков, далее с помощью Flex Box вытянем блок на другое место, для улучшения структуры документа с помощью "order"-->
                 <img src="img/icon-1.svg" alt="Иконка жилья" width="75" height="72">
                 <h4>Жильё</h4>
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!  </p>
               </li>
-              <li>
+              <li  class="item-wrapper">
                 <img src="img/icon-3.svg" alt="Иконка еды" width="74" height="70">
                 <h4>Еда</h4>
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li>
+              <li  class="item-wrapper">
                 <img src="img/icon-2.svg" alt="Иконка сувениров" width="64" height="76">
                 <h4>Сувениры</h4>
                 <p>Не только китайского, но и местного производства</p>
@@ -77,17 +74,17 @@
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
           </li>
-          <li class="feature-item feature-number">
+          <li class="feature-item feature-number item-wrapper">
             <h3>Небольшая<br> площадь</h3>
             <p>— №3 —</p>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="feature-item feature-number">
+          <li class="feature-item feature-number item-wrapper">
             <h3>Красивая <br>дорога</h3>
             <p>— №4 —</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="feature-item feature-number"feature-item>
+          <li class="feature-item feature-number item-wrapper">
             <h3>Мало<br> туристов</h3>
             <p>— №5 —</p>
             <p>Большинство едет в гранд каньон и толпится там</p>
@@ -100,34 +97,36 @@
         <p class="appointment-info">Укажите предполагаемые даты поездки, <br>
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </ul>
-        <button class="appointment-button" type="button">Поиск гостиницы в Седоне</button>
-        <div class="pop-up">
-          <form class="appointment-form modal" action="https://echo.htmlacademy.ru" method="post">
-            <div class="form">
-              <p class="appointment-item">
-                <label for="date-arrival">Дата заезда:</label>
-                <input id="date-arrival" type="text" name="date-arrival" value="24 апреля 2017">
-                <a href=""><img src="img/calendar.svg" width="21" height="22" alt="Показать календарь"></a>
-              </p>
-              <p class="appointment-item">
-                <label for="date-departure">Дата выезда:</label>
-                <input id="date-departure" type="text" name="date-departure" value="4 июля 2017"> <!--placeholder="4 июля 2017">-->
-                <a href=""><img src="img/calendar.svg" width="21" height="22" alt="Показать календарь"></a>
-              </p>
-              <p class="appointment-item">
-                <label for="appointment-adults">Взрослые:</label>
-                <button class="number" name="minus" aria-label="Уменьшить количество взрослых">-</button>
-                <input id="appointment-adults" type="text" name="adults" value="2">
-                <button class="number" name="plus" aria-label="Увеличить количество взрослых">+</button>
-              </p>
-              <p class="appointment-item">
-                <label for="appointment-children">Дети:</label>
-                <button class="number" name="minus" aria-label="Уменьшить количество детей">-</button>
-                <input id="appointment-children" type="text" name="children" value="1">
-                <button class="number" name="plus" aria-label="увеличить количесво детей">+</button>
-              </p>
-              <button class="button button-search" type="submit">Найти</button>
-            </form>
+        <div class="wrapper">
+          <a href="#">Поиск гостиницы в Седоне</button>
+          <div class="pop-up">
+            <form class="appointment-form modal" action="https://echo.htmlacademy.ru" method="post">
+              <div class="form">
+                <p class="appointment-item">
+                  <label for="date-arrival">Дата заезда:</label>
+                  <input id="date-arrival" type="text" name="date-arrival" value="24 апреля 2017">
+                  <a href=""><img src="img/calendar.svg" width="21" height="22" alt="Показать календарь"></a>
+                </p>
+                <p class="appointment-item">
+                  <label for="date-departure">Дата выезда:</label>
+                  <input id="date-departure" type="text" name="date-departure" value="4 июля 2017"> <!--placeholder="4 июля 2017">-->
+                  <a href=""><img src="img/calendar.svg" width="21" height="22" alt="Показать календарь"></a>
+                </p>
+                <p class="appointment-item">
+                  <label for="appointment-adults">Взрослые:</label>
+                  <button class="number" name="minus" aria-label="Уменьшить количество взрослых">-</button>
+                  <input id="appointment-adults" type="text" name="adults" value="2">
+                  <button class="number" name="plus" aria-label="Увеличить количество взрослых">+</button>
+                </p>
+                <p class="appointment-item">
+                  <label for="appointment-children">Дети:</label>
+                  <button class="number" name="minus" aria-label="Уменьшить количество детей">-</button>
+                  <input id="appointment-children" type="text" name="children" value="1">
+                  <button class="number" name="plus" aria-label="увеличить количесво детей">+</button>
+                </p>
+                <button class="button button-search" type="submit">Найти</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>

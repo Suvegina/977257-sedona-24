@@ -133,6 +133,10 @@ legend {
 	color: rgba(255,255,255,0.3);
 }
 
+.wrapper {
+	position: relative;
+}
+
 .appointment-button {
 	font-size: 21px;
 	font-weight: bold;
@@ -149,6 +153,7 @@ legend {
 	background-color: #766357;
 	border: none;
 }
+
 /*Кнопка поиск гостиницы в седоне*/
 .appointment-button:hover,
 .right:hover {
@@ -192,6 +197,8 @@ input[type="text"]:focus {
 	margin: 0 auto;
 	background-color: white;
 	box-shadow: 0px 1px 35px -13px #000000;
+	position: absolute;
+	left: 25%;
 }
 
 /*Фоновое изображение на странице каталога*/
@@ -233,26 +240,39 @@ img.main-cover::after {
 	bottom: 0;
 	position: absolute;
 }*/
+
+.main-cover {
+	position: relative;
+
+}
+
 .main-cover img {
 	background-image: url("../img/index-bg2.jpg");
 	width: 100%;
 	height: 510px;
 	background-repeat: no-repeat;
 	margin-bottom: 55px;
+
 }
 
-img.main-cover::before {
-	content: :"";
+.main-cover::before {
+	content: "";
 	display: block;
-	height: 59px;
-}
+	height: 354px;
+	width: 460px;
+	left: 200px;
+	background-image: url(../img/intro-welcome.svg);
+	background-repeat: no-repeat;
+	position: absolute;
+	}
 
-img.main-cover::after {
-	content: :"";
+.main-cover::after {
+	content: "";
 	display: block;
-	height: 59px;
+	width: 100%;
+	height: 60px;
 	background-image: url(../img/polygon.svg);
-	bottom: 0;
+	bottom: 58px;
 	position: absolute;
 }
 
@@ -286,6 +306,9 @@ img.main-cover::after {
 	padding:0;
 	color: #000000;
 	list-style: none;
+	display: flex;
+
+
 }
 
 .site-navigation a {
@@ -313,7 +336,7 @@ img.main-cover::after {
 .sort {
 	padding: 30px 73px;
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
 	/*justify-content: space-between;*/
 }
 .sort-item{
@@ -360,10 +383,10 @@ img.main-cover::after {
 .sort-item p {
 	text-align: left;
 }
-
+/*
 .catalog-item,
 .sort {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;*/
 }
 .catalog-list li {
 	list-style: none;
@@ -729,6 +752,10 @@ img.main-cover::after {
 	padding-right: 60px;
 	display: flex;
 	justify-content: space-around;
+}
+
+.item-wrapper {
+	padding: 40px;
 }
 
 /*Стили форм*/
