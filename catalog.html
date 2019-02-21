@@ -10,15 +10,13 @@
   <body>
     </header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <a href="index.html"><img src="img/logo-sedona.svg"alt="Логотип города Седона" width="140px" height="71"></a>
-        </a>
+        <a class="main-header-logo" href="index.html"><img src="img/logo-sedona.svg "alt="Логотип города Седона" width="140px" height="71"></a>
         <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="gallery.html">Фото и видео</a></li>
-          <li><a href="map.html">Карта штата</a></li>
-          <li class="site-navigation-current"><a href="catalog.html">Гостиницы</a></li>
-        </ul>
+          <li class="left-navigation info-navigation"><a href="info.html">Информация</a></li>
+          <li class="left-navigation photos-navigation"><a href="gallery.html">Фото и видео</a></li>
+          <li class="right-navigation map-navigation"><a href="map.html">Карта штата</a></li>
+          <li class="right-navigation-current right-navigation hostel-navigation"><a href="catalog.html">Гостиницы</a></li>
+        </ul> 
       </nav>
     </header> 
     
@@ -44,7 +42,6 @@
               </li>
             </ul>
           </fieldset>
-
           <fieldset>
             <legend>Тип жилья:</legend>
             <ul>
@@ -61,8 +58,6 @@
                 <label for="filter-apartments">Апартаменты</label>
               </li>
             </ul>
-            <!-- <input type="range" name="filter-price" min="0" max="3000" step="1" value="50"> <br>
-            <button type="submit" class="filter-button button">Показать</button>  -->
           </fieldset>
           <div class="filter-range">
             <div class="filter-range-title">Стоимость в сутки (р):</div>
@@ -79,10 +74,7 @@
             </div>
             <button class="btn-transparent" type="submit">Показать</button> 
         </div>
-        
         </form>
-        
-        <!-- <img src="img/catalog-bg.jpg" width="1200" height="510" alt="Фон"> -->
 
       </section><!-- Блок с сортировкой товаров - начало --- -->
       <section class="sort">
@@ -122,7 +114,7 @@
                 <img src="img/star.svg" alt="Звезда 2" width="18" height="17">
                 <img src="img/star.svg" alt="Звезда 3" width="18" height="17">
                 <img src="img/star.svg" alt="Звезда 4" width="18" height="17">
-                <p class="rating">Рейтинг:8,5</p>
+                <p class="rating">Рейтинг: 8,5</p>
               </div>
             </section> 
           </li>
@@ -146,7 +138,7 @@
                 <img src="img/star.svg" alt="Звезда 1" width="18" height="17">
                 <img src="img/star.svg" alt="Звезда 2" width="18" height="17">
                 <img src="img/star.svg" alt="Звезда 3" width="18" height="17">
-                <p class="rating">Рейтинг:8,9</p>
+                <p class="rating">Рейтинг: 8,9</p>
               </div>
             </section> 
           </li>
@@ -169,7 +161,7 @@
               <div class="star">
                 <img src="img/star.svg" alt="Звезда 1" width="18" height="17">
                 <img src="img/star.svg" alt="Звезда 2" width="18" height="17">
-                <p class="rating">Рейтинг:9,2</p>
+                <p class="rating">Рейтинг: 9,2</p>
               </div>
             </section> 
           </li>
