@@ -15,6 +15,7 @@ body {
 
 	background-color: #f2f2f2;
 	background-repeat: no-repeat;
+	box-shadow: 0px 0px 28px -10px #000000;
 }
 
 a {
@@ -42,8 +43,12 @@ img {
 }
 
 .filter { /* Стили общего блока фильтров + фоновое изображение*/
-	padding: 25px 73px;
+	/*padding: 28px 73px;*/
+	padding-top: 26px;
+	padding-right: 73px;
 	padding-bottom: 0;
+	padding-left: 70px;
+
 	min-height: 217px;
 
 	color: #000000;
@@ -71,10 +76,10 @@ img {
 .filter-input:focus label {
   color: #ffffff;
 }
-
+/*
 .filter-input:disabled + label {
   color: #6a6a6a;
-}
+}*/
 
 .filter-input:checked + disabled + label {
   color: #6a6a6a;
@@ -114,6 +119,9 @@ legend {
 	text-transform: uppercase;
 }
 
+.type-home {
+	margin-right: 230px;
+}
 
 /*Стили кнопок*/
 .button {
@@ -357,24 +365,34 @@ input[type="text"]:focus {
 }
 
 .sort {
-	padding: 30px 73px;
+	/*padding: 30px 73px;*/
 	display: flex;
-	align-items: center;
-	border-bottom: 1px solid #e5e5e5;
-	/*justify-content: space-between;*/
-}
-.sort-item{
-	width: 240px;
+	padding: 10px 73px;
+/*	align-items: center;
+	border-bottom: 1px solid #e5e5e5;*/
+	justify-content: space-between;
 }
 
 .sort h3 p {
 	margin: 0;
 }
 
+.sort p {
+	font-size: 12px;
+	line-height: 18px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.sort-item {
+	color: #000;
+}
+
 .sort-item a {
 	text-align: center;
 	color: #000000;
-	/*opacity: 0.3;*/
+	border-bottom: 1px dotted #81b3d2;
+	opacity: 0.3;
 }
 
 .sort-item a:visited {
@@ -392,15 +410,6 @@ input[type="text"]:focus {
 	border-bottom: none; 
 }
 
-.sort-item a,
-.sort-item a:hover {
-	border-bottom: 1px dotted #81b3d2;
-}
-
-.sort-up-down {
-	text-align: right;
-}
-
 .sort-item h3 {
 	font-size: 21px;
 	font-weight: bold;
@@ -411,6 +420,27 @@ input[type="text"]:focus {
 .sort-item p {
 	text-align: left;
 }
+
+/*
+.sort-item a,
+.sort-item a:hover {
+	border-bottom: 1px dotted #81b3d2;
+}*/
+/* Не применяется свойство!
+.sort-up-down path {
+	text-align: right;
+	fill: #cacaca;
+}
+*/
+.sort-up-down:hover {
+	fill: #1e090f;
+}
+
+.sort-up-down:active {
+	fill: #81b3d2;
+}
+
+
 /*
 .catalog-item,
 .sort {
@@ -464,7 +494,9 @@ input[type="text"]:focus {
 	position: relative;
 
   height: 36px;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
+
+  font-size: 0;
 
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -487,15 +519,20 @@ input[type="text"]:focus {
   display: inline-block;
 
   font-size: 14px;
-  line-height: 38px;
+  line-height: 21px;
   vertical-align: top;
 
   cursor: pointer;
 }
 
+.price-controls label:focus,
+.price-controls label:hover {
+	color: 000000;
+	height: 36px;
+}
+
 .price-controls .min-price,
 .price-controls .max-price {
-  /*width: 90px;*/
   padding-left: 65px;
 }
 
@@ -533,18 +570,20 @@ input[type="text"]:focus {
 	position: absolute;
   top: -9px;
 
-  width: 4px;
-  height: 4px;
+  width: 20px;
+  height: 20px;
 
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  box-shadow: 0 2px 1px 0 rgba(171, 171, 171, 0.8);
+  
+  transition: transform .1s;
   cursor: pointer;
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+	transform: scale(1.1);
 }
 
 .range-toggle-min {
@@ -558,7 +597,8 @@ input[type="text"]:focus {
 .btn-transparent {
   display: block;
   margin: 0 auto;
-  padding: 6px 35px;
+  margin-left: 85px;
+  padding: 6px 34px;
 
   font-size: 14px;
   line-height: 20px;
