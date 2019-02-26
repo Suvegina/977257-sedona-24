@@ -3,6 +3,19 @@
 	box-sizing: border-box;
 }
 
+/*
+ * Add the correct display in IE 10+, not Firefox.
+ */
+.main-header-logo { 
+  position: absolute;
+  left: 44%; 
+}
+/*.feature-item {
+	display: flex;
+	padding: inherit;
+}
+
+*/
 body {
 	margin: 0 auto;
 	width: 1200px;
@@ -216,7 +229,7 @@ legend {
 
 	width: 568px;
 	height: 86px;
-	margin-top: 41px;
+	/*margin-top: 41px;*/
 	margin-bottom: 0;
 
 	height: 86px;
@@ -237,11 +250,13 @@ legend {
 	background-color: #503e33;
 	color: rgba(255,255,255,0.3);
 }
-.number.appointment-form button {
-	background-color: #cacaca;
-}
-/*Возможно их нужно удалить .button-booking */
 
+/*.number.appointment-form button {
+	background-color: #cacaca;
+}*/
+.number {
+
+}
 
 /*Фоновое изображение на странице каталога*/
 .filter img {
@@ -856,26 +871,24 @@ legend {
 	width: 400px;
 	text-align: center;
 	padding: 16px 50px 42px 50px;
-	display: flex;
+/*	display: flex;*/
 	flex-direction: column;
 	align-items: center;
 }
 
 .wrap {
 	display: flex;
-}
-
-.wrap {
 	list-style: none;
 	margin-left: 0; 
 	padding-left: 0;
 	margin: 0 auto;
+	margin-bottom: 50px;
 }
 
 .item-wrapper {
 	width: 400px;
 	padding: 16px 60px 42px 60px;
-	display: flex;
+	/*display: flex;*/
 	flex-direction: column;
 	background-color: #eeeeee;
 }
@@ -913,7 +926,7 @@ legend {
 	display: flex;
 	justify-content: space-around;
 	margin-top: 42px;
-	margin-bottom: 18px;
+	margin-bottom: 24px;
 }
 
 ul.more-advanture {
@@ -921,23 +934,33 @@ ul.more-advanture {
 	padding-left: 0;
 }
 
+.more-advanture h3 {
+	padding-top: 23px;
+	margin-bottom: 22px;
+}
+
 .description p {
 	display: block;
-	margin-top: 2px; 
+	margin-top: 19px; 
 	margin-bottom: 0 auto; 
 }
 
 .number {
 	margin-bottom: 2px;
+	margin-top: 24px;
 }
 
 .appointment h2 {
 	font-size: 30px;
 	line-height: 36px;
 	font-weight: bold;
-	padding-top: 25px;
-	padding-bottom: 5px;
-	margin-bottom: 19px;
+
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 26px;
+	/*padding-top: 25px;*/
+	/*padding-bottom: 5px;*/
+	/*margin-bottom: 19px;*/
 }
 
 .appointment {
@@ -946,13 +969,13 @@ ul.more-advanture {
 
 .appointment-info {
 	margin: 0 auto;
-	margin-bottom: 77px;
+	margin-bottom: 75px;
 }
 
 /*.appointment-form {
 	width: 568px auto;
 	padding-bottom: 55px;
-}*/
+}
 
 /*Стили форм Модального окна*/
 .pop-up {
@@ -968,40 +991,39 @@ ul.more-advanture {
 	left: 316px;
 	top: 56px;
 }
+
 /*Стили полей формы*/
 .form {
 	font-weight: bold;
+
 }
 
 .appointment-item {
 	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
-.appointment-item p{
-	
-}
 
-.appointment-item input {
- max-width: 
-}
-
-.quantity {
-	display: flex;
-	margin-bottom: 55px;
-	width: 458px;
-}
-
-/*Стили текстовых полей для формы*/
+/*Стили текстовых полей для формы на главной странице*/
 .appointment-item input[type="text"] {
 	background-color: #f2f2f2;
 	font-weight: bold;
 	text-transform: uppercase;
-	/*width: 346px;*/
+	width: 346px;
 	height: 38px;
 	padding-left: 13px; 
 	border: none;	
-}
 
+	position: relative;
+}
+/*
+.appointment-item input[type="text"]::before {
+	position: absolute;
+	background-image: url(../img/calendar.svg);
+	top: 0;
+}
+*/
 .appointment-item input[type="text"]:hover {
 	background-color: #ebebeb;
 }
@@ -1015,9 +1037,57 @@ ul.more-advanture {
 	text-align: left;
 }
 
-.date-arrival {
-/* background: url("calendar.svg") no-repeat 97% 50%;*/
+.quantity .appointment-item input[type="text"] {
+	width: 38px;
 }
+
+/*#appointment-children input [type="text"],
+#appointment-adults input [type="text"] */
+
+/*
+.appointment-item input [type="button"],
+.appointment-item input [type="button"] {
+}
+*/
+.appointment-item {
+	margin-top: 0;
+	margin-bottom: 29px;
+}
+
+.quantity {
+	display: flex;
+	/*flex-wrap: wrap;*/
+	width: 458px;
+	justify-content: space-between;
+	margin-bottom: 26px;
+}
+
+/*Кнопки формы увеличения и уменьшения гостей + эффекты*/
+.number-less,
+.number-more {
+	height: 38px;
+	width: 38px;
+
+	font-size: 18px;
+	font-weight: bold;
+	color: #a9a9a9;
+	background-color: #f2f2f2;
+	border: none;	
+}
+
+.number-less:hover,
+.number-more:hover {
+	color: #000000;
+}
+
+.number-less:active,
+.number-more:active {
+	color: #81b3d2;
+}
+
+/*.children label {
+
+}*/
 
 /*Стили карты*/
 .modal-map {
