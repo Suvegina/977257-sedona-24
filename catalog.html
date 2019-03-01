@@ -15,7 +15,7 @@
           <li class="left-navigation info-navigation"><a href="info.html">Информация</a></li>
           <li class="left-navigation photos-navigation"><a href="gallery.html">Фото и видео</a></li>
           <li class="right-navigation map-navigation"><a href="map.html">Карта штата</a></li>
-          <li class="right-navigation-current right-navigation hostel-navigation"><a href="catalog.html">Гостиницы</a></li>
+          <li class="site-navigation-current right-navigation hostel-navigation"><a href="catalog.html">Гостиницы</a></li>
         </ul> 
       </nav>
     </header> 
@@ -30,15 +30,15 @@
             <ul>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked> <!-- disabled -->
-                <label for="filter-pool">Бассейн</label>
+                <label class="disabled" for="filter-pool">Бассейн</label>
               </li>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking"> 
-                <label for="filter-parking">Парковка</label>
+                <label class="disabled" for="filter-parking">Парковка</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Wi-fi" id="filter-Wi-fi"> <!-- disabled -->
-                <label for="filter-Wi-fi">Wi-fi</label>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Wi-fi" id="filter-Wi-fi"> <!-- disabled checked -->
+                <label class="disabled" for="filter-Wi-fi">Wi-fi</label>
               </li>
             </ul>
           </fieldset>
@@ -47,15 +47,15 @@
             <ul>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hostel" id="filter-hostel" checked> 
-                <label for="filter-hostel">Гостиница</label>
+                <label class="disabled" for="filter-hostel">Гостиница</label>
               </li>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked> 
-                <label for="filter-motel">Мотель</label>
+                <label class="disabled" for="filter-motel">Мотель</label>
               </li>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
-                <label for="filter-apartments">Апартаменты</label>
+                <label class="disabled" for="filter-apartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
@@ -81,9 +81,9 @@
         <h2>Найдено: 3</h2>
         <p>Сортировка:</p>
         <div class="sort-item">
-          <a href="#" type="sort-price"><p class="active-sort-item">По цене</p></a>
-          <a href="#" type="sort-type"><p>По типу</p></a>
-          <a href="#" type="sort-rating"><p>По рейтингу</p></a> 
+          <a class="active-sort-item sort-item-link" href="#" type="sort-price">По цене</a>
+          <a  class="sort-item-link" href="#" type="sort-type">По типу</a>
+          <a  class="sort-item-link" href="#" type="sort-rating">По рейтингу</a> 
         </div>
         <div class="sort-up-down">
           <a class="sort-up" href="#"><img class="visually-hidden" src="img/icon-up-dir.svg" alt="Сортировка вверх">

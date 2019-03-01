@@ -22,7 +22,7 @@
         </ul> 
       </nav>
       <div class="main-cover">
-         <img src="img/index-bg2.jpg"width="1200" height="510" alt="">
+         <img src="img/index-bg2.jpg" width="1200" height="510" alt="">
       </div>
   
     </header> 
@@ -103,25 +103,37 @@
                 <p class="appointment-item">
                   <label for="date-arrival">Дата заезда:</label>
                   <input id="date-arrival" type="text" name="date-arrival" value="24 апреля 2017">
-                  <a href=""><!-- <img src="img/calendar.svg" width="21" height="22" alt="Показать календарь"> --></a>
+                  <button type="button"class="btn-calendar" name="calendar" aria-label="Показать календарь">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
+                  </button>
                 </p>
                 <p class="appointment-item">
                   <label for="date-departure">Дата выезда:</label>
                   <input id="date-departure" type="text" name="date-departure" value="4 июля 2017"> <!--placeholder="4 июля 2017">-->
-                  <a href=""><!-- <img src="img/calendar.svg" width="21" height="22" alt="Показать календарь"> --></a>
+                  <button type="button"class="btn-calendar" name="calendar" aria-label="Показать календарь">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
+                  </button>
                 </p>
                 <div class="quantity">
-                  <p class="appointment-item">
-                    <label for="appointment-adults">Взрослые:</label>
-                    <button type="button"class="number-less" name="minus" aria-label="Уменьшить количество взрослых">-</button>
-                    <input id="appointment-adults" type="text" name="adults" value="2">
-                    <button type="button"class="number-more" name="plus" aria-label="Увеличить количество взрослых">+</button>
+                  <p class="adults">
+                    <div class="adults-label">
+                      <label for="appointment-adults">Взрослые:</label>
+                    </div>
+                    <div class="adults-group">
+                      <button type="button"class="number-less" name="minus" aria-label="Уменьшить количество взрослых">-</button>
+                      <input id="appointment-adults" type="text" name="adults" value="2">
+                      <button type="button"class="number-more" name="plus" aria-label="Увеличить количество взрослых">+</button>
+                    </div>
                   </p>
-                  <p class="appointment-item">
-                    <label for="appointment-children" class="children">Дети:</label>
-                    <button type="button" class="number-less" name="minus" aria-label="Уменьшить количество детей">-</button>
-                    <input id="appointment-children" type="text" name="children" value="1">
-                    <button type="button"class="number-more" name="plus" aria-label="увеличить количесво детей">+</button>
+                  <p class="children">
+                    <div class="children-label">
+                      <label for="appointment-children">Дети:</label>
+                    </div>
+                    <div class="children-group">
+                      <button type="button" class="number-less" name="minus" aria-label="Уменьшить количество детей">-</button>
+                      <input id="appointment-children" type="text" name="children" value="0">
+                      <button type="button"class="number-more" name="plus" aria-label="увеличить количесво детей">+</button>
+                    </div>
                   </p>
                 </div>
                 <button class="button" type="submit">Найти</button>
@@ -137,9 +149,9 @@
       </section>
     </main>
     
-    <footer class="main-footer">
+    <footer class="main-footer index-footer">
       <div>
-        <p class="hashtag-town">#visitSEDONA  </p>
+        <p class="hashtag-town">#visitSEDONA</p>
       </div>
       <div class="footer-social" area-label="Ссылки на социальные сети">
         <ul>

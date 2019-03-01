@@ -10,12 +10,7 @@
   position: absolute;
   left: 44%; 
 }
-/*.feature-item {
-	display: flex;
-	padding: inherit;
-}
 
-*/
 body {
 	margin: 0 auto;
 	width: 1200px;
@@ -29,6 +24,7 @@ body {
 	background-color: #f2f2f2;
 	background-repeat: no-repeat;
 	box-shadow: 0px 0px 28px -10px #000000;
+	position: relative;
 }
 
 a {
@@ -138,15 +134,13 @@ img {
 .filter-input:focus label {
   color: #ffffff;
 }
-/*
-.filter-input:disabled + label {
-  color: #6a6a6a;
-}*/
 
-/*Обрати внимание, не работают эффекты чекбоксов*/
-.filter-input-checkbox:disabled + label::before,
-.filter-input-checkbox:disabled + checked + label::after {
-  fill: #6a6a6a;
+.filter-input-checkbox:disabled + .disabled::before {
+	opacity: 0.3;
+}
+
+.filter-input-checkbox:disabled + .disabled {
+	opacity: 0.3;
 }
 
 /* Кнопка фильтра на странице каталога */
@@ -204,9 +198,11 @@ legend {
 	background-color: #81b3d2;
 	border: none;
 }
+
 .button:hover,
 .left:hover {
 	background-color: #669ec0;
+
 }
 .button:active,
 .left:active {
@@ -233,7 +229,7 @@ legend {
 	margin-bottom: 0;
 
 	height: 86px;
- padding: 30px 139px;
+	padding: 30px 140px;
 
 	background-color: #766357;
 	border: none;
@@ -249,13 +245,6 @@ legend {
 .right:active {
 	background-color: #503e33;
 	color: rgba(255,255,255,0.3);
-}
-
-/*.number.appointment-form button {
-	background-color: #cacaca;
-}*/
-.number {
-
 }
 
 /*Фоновое изображение на странице каталога*/
@@ -336,7 +325,6 @@ legend {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
 }
 
 .site-navigation {
@@ -380,17 +368,13 @@ legend {
 	color: #000000;
 }
 
-.site-navigation-current a:visited {
-	color: #766357;
-}
-
 .site-navigation a:hover {
 	color: #81b3d2;
 	list-style: none;
 }
 
-.site-navigation-current a:active {
-	color: #cacaca;
+.site-navigation-current a {
+	color: #766357;
 }
 
 .container {
@@ -432,36 +416,24 @@ legend {
 	margin-bottom: 2px;	
 }
 
-.sort-item a {
-	text-align: center;
+.sort-item-link {
 	color: #cacaca;
-	border-bottom: none; 
-	/*color: #000000;*/
-	/*opacity: 0.3;*/
+	border-bottom: 1px dotted #81b3d2;
 }
 
-.sort-item a:visited {
-	color: #81b3d2;
-	border-bottom: none;
-}
-
-.sort-item a:hover {
+.sort-item-link:hover {
 	color: #81b3d2;
 	border-bottom: 1px dotted #81b3d2;
 }
 
-.sort-item a:active {
+.sort-item-link:active {
 	color: #000000;
 	border-bottom: none; 
 }
 
-.sort-item a,
-.sort-item a:hover {
-	border-bottom: 1px dotted #81b3d2;
-}
-
 .active-sort-item {
 	color: #81b3d2;
+	border: none;
 }
 
 .sort-up-down {
@@ -471,9 +443,6 @@ legend {
 .sort-up,
 .sort-down {
 	fill: #cacaca;
-/*	background-repeat: no-repeat;
-	width: 11px;
-	height: 10px;*/
 }
 
 .sort-up:visited,
@@ -490,26 +459,6 @@ legend {
 .sort-down:active, {
 	fill: #81b3d2;
 }
-
-.active-sort-arrow {
-	fill: #81b3d2;
-}
-
-/*.sort-up {
-	background-image: url(../img/icon-up-dir.svg);
-	background-repeat: no-repeat;
-	width: 11px;
-	height: 10px;
-}
-
-.sort-down {
-	background-image: url(../img/icon-down-dir.svg);
-	background-repeat: no-repeat;
-	width: 11px;
-	height: 10px;
-}
-*/
-/*.on {}*/
 
 .sort-up {
 	margin-right: 5px;
@@ -537,14 +486,10 @@ legend {
 	fill: #81b3d2;
 }
 
-.active-sort: path {
+.active-sort path {
 	fill: #81b3d2;
 }
 
-/*
-.catalog-item,
-.sort {
-  border-bottom: 1px solid #e5e5e5;*/
 }
 .catalog-list li {
 	list-style: none;
@@ -759,8 +704,6 @@ legend {
 }
 
 .info-item {
-	/*width: 87%;*/
-/*	padding-left: 28px;*/
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -870,7 +813,7 @@ legend {
 .feature-item {
 	width: 400px;
 	text-align: center;
-	padding: 16px 50px 42px 50px;
+	padding: 16px 47px 42px 47px;
 /*	display: flex;*/
 	flex-direction: column;
 	align-items: center;
@@ -915,7 +858,7 @@ legend {
 .feature-item h3{
 	font-size: 21px;
 	line-height: 21px;
-	padding: 30px 60px 0 60px;
+	padding: 30px 70px 0 70px;
 	margin: 0 auto;
 	margin-bottom: 11px;
 }
@@ -958,9 +901,6 @@ ul.more-advanture {
 	padding: 0;
 	margin-top: 0;
 	margin-bottom: 26px;
-	/*padding-top: 25px;*/
-	/*padding-bottom: 5px;*/
-	/*margin-bottom: 19px;*/
 }
 
 .appointment {
@@ -970,11 +910,6 @@ ul.more-advanture {
 .appointment-info {
 	margin: 0 auto;
 	margin-bottom: 75px;
-}
-
-/*.appointment-form {
-	width: 568px auto;
-	padding-bottom: 55px;
 }
 
 /*Стили форм Модального окна*/
@@ -1006,28 +941,31 @@ ul.more-advanture {
 
 
 /*Стили текстовых полей для формы на главной странице*/
-.appointment-item input[type="text"] {
+
+.appointment-item input[type="text"],
+.quantity input[type="text"] {
 	background-color: #f2f2f2;
 	font-weight: bold;
 	text-transform: uppercase;
-	width: 346px;
 	height: 38px;
 	padding-left: 13px; 
 	border: none;	
 
 	position: relative;
 }
-/*
-.appointment-item input[type="text"]::before {
-	position: absolute;
-	background-image: url(../img/calendar.svg);
-	top: 0;
+
+.appointment-item input[type="text"] {
+	width: 308px;
 }
-*/
-.appointment-item input[type="text"]:hover {
+
+
+.appointment-item input[type="text"]:hover,
+.quantity input[type="text"]:hover {
 	background-color: #ebebeb;
 }
-.appointment-item input[type="text"]:focus {
+
+.appointment-item input[type="text"]:focus,
+.quantity input[type="text"]:focus {
 	background-color: #ffffff;
 	border: 2px solid #e5e5e5;
 }
@@ -1037,18 +975,10 @@ ul.more-advanture {
 	text-align: left;
 }
 
-.quantity .appointment-item input[type="text"] {
+.quantity input[type="text"] {
 	width: 38px;
 }
 
-/*#appointment-children input [type="text"],
-#appointment-adults input [type="text"] */
-
-/*
-.appointment-item input [type="button"],
-.appointment-item input [type="button"] {
-}
-*/
 .appointment-item {
 	margin-top: 0;
 	margin-bottom: 29px;
@@ -1056,10 +986,62 @@ ul.more-advanture {
 
 .quantity {
 	display: flex;
-	/*flex-wrap: wrap;*/
+	/*justify-content: space-between;*/
+
 	width: 458px;
-	justify-content: space-between;
-	margin-bottom: 26px;
+	margin-bottom: 55px;
+	align-items: center;
+}
+
+.quantity p {
+	margin:0;
+}
+
+.children {
+	margin-left: 35px;
+}
+
+.children-group,
+.adults-group {
+	display: flex;
+
+}
+
+.adults {
+	display: flex;
+}
+
+.adults p {
+	width: 114px;
+	margin: 40px;
+}
+
+.adults-group {
+	margin-right: 55px;
+	margin-left: 40px;
+}
+
+.children-label {
+	margin-right: 25px;
+}
+
+.btn-calendar {
+	height: 38px;
+	width: 38px;
+	background-color: #f2f2f2;
+
+	align-self: center;
+	justify-content: center;
+	fill: #cacaca;
+	border: none;
+}
+
+.btn-calendar:hover {
+	fill: #000000;
+}
+
+.btn-calendar:active {
+	fill: #81b3d2;;
 }
 
 /*Кнопки формы увеличения и уменьшения гостей + эффекты*/
@@ -1067,8 +1049,8 @@ ul.more-advanture {
 .number-more {
 	height: 38px;
 	width: 38px;
+	font-size: 20px;
 
-	font-size: 18px;
 	font-weight: bold;
 	color: #a9a9a9;
 	background-color: #f2f2f2;
@@ -1085,13 +1067,9 @@ ul.more-advanture {
 	color: #81b3d2;
 }
 
-/*.children label {
-
-}*/
 
 /*Стили карты*/
 .modal-map {
-	position: relative;
 	text-align: center;
 	margin-top: 28px;
 }
@@ -1114,13 +1092,15 @@ ul.more-advanture {
 	padding-left: 130px;
 
 	background-color: #ffffff;
-	opacity: 0,9;
+	opacity: 0.9;
 	display: flex; 
 	justify-content: space-between;
+}
 
+.index-footer {
 	z-index: 6;
 	position: absolute;
-/*	bottom: 0;*/
+	bottom: 0;
 }
 
 .hashtag-town {
@@ -1135,8 +1115,6 @@ ul.more-advanture {
 .footer-social {
 	width: 151px;
 	text-align: center;
-/*	display: flex;
-  align-items: center;*/
 }
 
 .footer-social ul {
@@ -1153,10 +1131,9 @@ ul.more-advanture {
 
 	display: flex;
 	align-items: center;
-  justify-content: center;
+  	justify-content: center;
 
 	background-color: #81b3d2;
-/*	padding: 5px;*/
 }
 
 .social-button:hover {
