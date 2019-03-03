@@ -1068,12 +1068,10 @@ ul.more-advanture {
 .modal-map {
 	text-align: center;
 	margin-top: 28px;
-}
-.modal {
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	align-items: ;
 }
 
 /*Стили футера*/
