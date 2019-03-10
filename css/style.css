@@ -161,7 +161,7 @@ img {
 	font-weight: normal;
 
 	color: #ffffff;
-  border: 2px solid white;
+ 	border: 2px solid white;
   border-radius: 2px;
 
   width: 141px;
@@ -180,7 +180,7 @@ img {
 	background-color: #ffffff;
 }
 
-legend {
+.filter-section {
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: bold;
@@ -1234,7 +1234,7 @@ ul.more-advanture {
   z-index: 1;
 }
 
-iframe {
+.modal-map iframe {
   border: none; 
   z-index: 2;
   position: absolute;
