@@ -925,6 +925,17 @@ ul.more-advanture {
 	top: 56px;
 }
 
+/*Селектор "modal" используется для скриптов, будет подключен позже*/
+
+/*
+.modal {
+  display: none;
+}*/
+
+.modal-show {
+  display: block;
+}
+
 /*Стили полей формы*/
 .form {
 	font-weight: bold;
