@@ -791,9 +791,9 @@ img {
 }
 
 .about {
-	width: 700px;
+	width: 650px;
 	padding-right: 100px;
-	margin-right: 81px;
+	margin-right: 130px;
 	justify-content: flex-start;
 }
 
@@ -1045,10 +1045,10 @@ ul.more-advanture {
 
 /*Селектор "modal" используется для скриптов, будет подключен позже*/
 
-/*
+
 .modal {
   display: none;
-}*/
+}
 
 .modal-show {
   display: block;
@@ -1099,7 +1099,7 @@ ul.more-advanture {
 
 .appointment-item input[type="text"]:focus,
 .quantity input[type="text"]:focus {
-	background-color: #ffffff;
+	background-color: #fff;
 	/*border: 2px solid #e5e5e5;*/
 	outline: 2px solid #e5e5e5;
 }
