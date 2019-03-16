@@ -1039,14 +1039,14 @@ ul.more-advanture {
 	-webkit-box-shadow: 0px 1px 35px -13px #000000;
 	        box-shadow: 0px 1px 35px -13px #000000;
 	position: absolute;
+	z-index: 5;
 	left: 316px;
-	/*top: 56px;*/
 }
 
 /*Селектор "modal" используется для скрипта*/
 @keyframes step {
-	0% {transform: translateY(-10px);}
-	15% {transform: translateY(60px);}
+	0% {transform: translateY(-50px);}
+	40% {transform: translateY(70px);}
 	100% {transform: translateY(0px);}
 }
 
@@ -1065,7 +1065,6 @@ ul.more-advanture {
 /*Стили полей формы*/
 .form {
 	font-weight: bold;
-
 }
 
 .appointment-item {
@@ -1079,7 +1078,6 @@ ul.more-advanture {
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 }
-
 
 /*Стили текстовых полей для формы на главной странице*/
 
@@ -1098,7 +1096,6 @@ ul.more-advanture {
 .appointment-item input[type="text"] {
 	width: 308px;
 }
-
 
 .appointment-item input[type="text"]:hover,
 .quantity input[type="text"]:hover {
@@ -1130,7 +1127,6 @@ ul.more-advanture {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	/*justify-content: space-between;*/
 
 	width: 458px;
 	margin-bottom: 55px;
