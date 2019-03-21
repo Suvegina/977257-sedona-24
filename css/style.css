@@ -102,7 +102,28 @@ input[type="checkbox"].visually-hidden {
 .filter-option {
 	margin-bottom: 25px;
 	padding-left: 40px;
+	/*background-color: green; /*временно*/
 }
+
+.filter-input {
+  opacity: 0;
+}
+
+.filter-input:hover label,
+.filter-input:focus label {
+  color: #ffffff;
+}
+
+/*.filter-option label::before {
+  content: "";
+  display: inline-block;
+
+  width: 19px;
+  height: 19px;
+	
+	border: 2px solid ;
+	border-radius: 2px;
+}*/
 
 .filter-option label {
   position: relative;
@@ -143,25 +164,15 @@ input[type="checkbox"].visually-hidden {
   background-repeat: no-repeat;
 }
 
-.filter-input:hover label,
-.filter-input:focus label {
-  color: #ffffff;
+.filter-input:focus + label::before/*,
+.filter-input:focus + label::after*/ {
+	outline: rgb(59, 153, 252) auto 10px;
 }
 
+.filter-input-checkbox:disabled + .disable,
 .filter-input-checkbox:disabled + .disabled::before {
 	opacity: 0.3;
 }
-
-.filter-input-checkbox:disabled + .disabled {
-	opacity: 0.3;
-}
-
-input[type="checkbox"] {
-    width: 40px;
-    height: 40px;
-    margin-left: 24px;
-}
-
 
 /* Кнопка фильтра на странице каталога */
 .filter-button[type="submit"] {
