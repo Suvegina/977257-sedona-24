@@ -101,7 +101,7 @@ input[type="checkbox"].visually-hidden {
 
 .filter-option {
 	margin-bottom: 25px;
-	padding-left: 40px;
+	padding-left: 24px;
 	/*background-color: green; /*временно*/
 }
 
@@ -166,7 +166,8 @@ input[type="checkbox"].visually-hidden {
 
 .filter-input:focus + label::before/*,
 .filter-input:focus + label::after*/ {
-	outline: rgb(59, 153, 252) auto 10px;
+	outline: rgb(59, 153, 252) auto 3px;
+	outline-style: solid;
 }
 
 .filter-input-checkbox:disabled + .disable,
