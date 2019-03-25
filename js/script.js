@@ -9,7 +9,7 @@ var departure = popup.querySelector("[name=date-departure]");
 var isStorageSupport = true;
 var storage = "";
   
-true {
+try {
   storage = localStorage.getItem("arrival");
 } catch (err) {
   isStorageSupport = false;
@@ -19,13 +19,13 @@ buttonLink.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	popup.classList.toggle("modal-show");
 	arrival.focus(); 
-	// почему-то не работает состояние фокуса на прописанном поле?
 });
 
 form.addEventListener("submit", function (evt) {
+	evt.preventDefault();
   if (!arrival.value || !departure.value) {
   	evt.preventDefault();
-  	// console.log("Нужно ввести дату заезда и выезда")
+  	//console.log("Нужно ввести дату заезда и выезда");
   	popup.classList.add("modal-error");
   } else {
   	localStorage.setItem("arrival", arrival.value);
@@ -40,4 +40,3 @@ window.addEventListener("keydown", function (evt) {
       }
     }
   });
-// так же не работает сброс формы клавишей esc. Вообще нужно это делать?
