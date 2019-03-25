@@ -102,7 +102,6 @@ input[type="checkbox"].visually-hidden {
 .filter-option {
 	margin-bottom: 25px;
 	padding-left: 24px;
-	/*background-color: green; /*временно*/
 }
 
 .filter-input {
@@ -114,16 +113,6 @@ input[type="checkbox"].visually-hidden {
   color: #ffffff;
 }
 
-/*.filter-option label::before {
-  content: "";
-  display: inline-block;
-
-  width: 19px;
-  height: 19px;
-	
-	border: 2px solid ;
-	border-radius: 2px;
-}*/
 
 .filter-option label {
   position: relative;
@@ -257,7 +246,6 @@ input[type="checkbox"].visually-hidden {
 
 	width: 568px;
 	height: 86px;
-	/*margin-top: 41px;*/
 	margin-bottom: 0;
 
 	height: 86px;
@@ -589,7 +577,6 @@ input[type="checkbox"].visually-hidden {
 } 
 
 /*Стили ползунка по подбору гостиниц по цене*/
-
 .filter-range {
   width: 318px;
 
@@ -863,7 +850,6 @@ input[type="checkbox"].visually-hidden {
 }
 
 /*Стили преимуществ*/
-
 .features h2{
 	margin-top: 0;
 }
@@ -871,6 +857,7 @@ input[type="checkbox"].visually-hidden {
 .features {
 	text-align: center;
 }
+
 .feature {
 	width: 400px;
 	-webkit-box-sizing: border-box;
