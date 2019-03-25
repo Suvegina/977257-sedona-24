@@ -287,20 +287,18 @@ input[type="checkbox"].visually-hidden {
 }
 
 /*Обложка главной страницы*/
-
 .main-cover {
 	position: relative;
+	background-color: #b0d4f1;
+	height: 507px;
 }
 
 .main-cover img {
 	width: 100%;
-	height: 507px;
-	margin-bottom: 54px;
+	height: 510px;
 
 	background-image: url("../img/index-bg2.jpg");
-	background-color: #b0d4f1;
 	background-repeat: no-repeat;
-	
 }
 
 .main-cover::before {
@@ -309,7 +307,7 @@ input[type="checkbox"].visually-hidden {
 	height: 354px;
 	width: 460px;
 	left: 370px;
-	top: 76px;
+	top: 75px;
 	background-image: url(../img/intro-welcome.svg);
 	background-repeat: no-repeat;
 	position: absolute;
@@ -319,20 +317,19 @@ input[type="checkbox"].visually-hidden {
 	content: "";
 	display: block;
 	width: 100%;
-	height: 60px;
+	height: 67px;
 
 	background-image: url(../img/polygon.svg);
 	background-repeat: no-repeat;
 
 	position: absolute;
-	bottom: 58px;
+	bottom: -14px;
 }
 
 .main-header {	
 	min-height: 56px;
 	margin:0 auto;
 	padding:0 auto;
-	background-color: #fff;
 }
 
 .main-header-logo{
@@ -753,15 +750,6 @@ input[type="checkbox"].visually-hidden {
   background: #ffffff;
 }
 
-/*Стили карточек отелей*/
-/*.content {
-	background-color: white;
-	width: 1200px;
-	margin: 0 auto;
-	-webkit-box-shadow:0 0 15px 0 rgba(146,146,146,1);
-			box-shadow:0 0 15px 0 rgba(146,146,146,1);
-}*/
-
 .catalog-list {
 	padding: 0;
 	list-style-type: none;
@@ -872,15 +860,6 @@ input[type="checkbox"].visually-hidden {
 .star {
 	text-align: right;
 	margin-top: 5px;
-/*
-	display: block;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-		-ms-flex-direction: column;
-			flex-direction: column;
-	-webkit-box-pack: justify;
-		-ms-flex-pack: justify;
-			justify-content: space-between;*/
 }
 
 /*Стили преимуществ*/
@@ -964,8 +943,8 @@ input[type="checkbox"].visually-hidden {
 
 .features-title h2 {
 	line-height: 26px;
-	padding: 370px;
-	padding-top: 0;
+	padding: 0 370px;
+	padding-top: 60px;
 	padding-bottom: 30px;
 
 	margin: 0 auto;
@@ -974,7 +953,7 @@ input[type="checkbox"].visually-hidden {
 
 .features-title p {
 	margin: 0;
-	margin-bottom: 50px;
+	margin-bottom: 52px;
 }
 
 .feature-item h3{
@@ -996,7 +975,7 @@ input[type="checkbox"].visually-hidden {
 		justify-content: space-around;
 
 	margin-top: 42px;
-	margin-bottom: 24px;
+	margin-bottom: 21px;
 	flex-wrap: wrap;
 }
 
@@ -1012,12 +991,14 @@ ul.more-advanture {
 
 .description p {
 	display: block;
+	line-height: 19px;
+
 	margin-top: 19px; 
 	margin-bottom: 0 auto; 
 }
 
 .number {
-	margin-bottom: 2px;
+	margin-bottom: 17px;
 	margin-top: 24px;
 }
 
@@ -1028,7 +1009,7 @@ ul.more-advanture {
 
 	padding: 0;
 	margin-top: 0;
-	margin-bottom: 26px;
+	margin-bottom: 23px;
 }
 
 .appointment {
@@ -1069,17 +1050,38 @@ ul.more-advanture {
 	40% {transform: translateY(70px);}
 	100% {transform: translateY(0px);}
 }
+/*Иная анимация модального окна*/
+/*@keyframes bounce {
+	0% {transform: translateY(-70px);}
+	70% {transform: translateY(30px);}
+	90% {transform: translateY(-10px);}
+	100% {transform: translateY(0);}
+}
+*/
+
+@keyframes shake {
+	0%, 100% {transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
 
 .modal {
-  display: none;
+	display: none;
 }
 
 .modal-show {
-  display: block;
-  animation-name: step;
-  animation-duration: 0.8s;
-  position: relative;
-  z-index: -1; 
+	display: block;
+	animation-name: step;
+	animation-duration: 0.6s;
+	/*animation: bounce 0.6s;*/
+	/*закоментированна - Иная анимация модального окна*/
+	position: relative;
+	z-index: -1; 
+}
+
+.modal-error {
+	animation-name: shake;
+	animation-duration: 0.6s;
 }
 
 /*Стили полей формы*/
